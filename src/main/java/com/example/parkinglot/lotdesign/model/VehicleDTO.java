@@ -6,8 +6,6 @@ import lombok.Setter;
 
 import javax.persistence.Id;
 
-@Getter
-@Setter
 @Data
 public class VehicleDTO {
 
