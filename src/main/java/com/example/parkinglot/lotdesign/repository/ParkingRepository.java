@@ -1,2 +1,7 @@
-package com.example.parkinglot.lotdesign.repository;public interface ParkingRepository {
+package com.example.parkinglot.lotdesign.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ParkingRepository {
 }
