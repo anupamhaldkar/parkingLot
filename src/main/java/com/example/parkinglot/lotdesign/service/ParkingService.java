@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface ParkingService {
     List<VehicleDTO> getAllVehicles();
+    String park(VehicleDTO vehicleDTO);
 }
