@@ -1,4 +1,4 @@
-package com.example.parkinglot.lotdesign;
+package com.example.parkinglot.lotdesign.serviceImpl;
 
 import com.example.parkinglot.lotdesign.model.VehicleDTO;
 import com.example.parkinglot.lotdesign.repository.ParkingRepository;
