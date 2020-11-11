@@ -27,4 +27,15 @@ public class ServiceImpl implements ParkingService {
         }
         return "Parked";
     }
+
+    @Override
+    public String unpark(Long id) {
+        if(id >0 && id <=10) {
+            parkingRepository.deleteById(id);
+        }
+        else {
+            throw new RuntimeException("Kindly provide a id between 1 to 10");
+        }
+        return "Unparked vehicle at slot number"+ id;
+    }
 }
