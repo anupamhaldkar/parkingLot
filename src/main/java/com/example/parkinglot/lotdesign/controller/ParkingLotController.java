@@ -3,10 +3,7 @@ package com.example.parkinglot.lotdesign.controller;
 import com.example.parkinglot.lotdesign.model.VehicleDTO;
 import com.example.parkinglot.lotdesign.service.ParkingService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +21,10 @@ public class ParkingLotController {
     @PostMapping("/park")
     public String park(VehicleDTO vehicleDTO){
         return parkingService.park(vehicleDTO);
+    }
+
+    @DeleteMapping("/unpark")
+    public String unpark(Long id){
+        return parkingService.unpark(id);
     }
 }
