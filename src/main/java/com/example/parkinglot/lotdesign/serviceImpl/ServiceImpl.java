@@ -4,9 +4,10 @@ import com.example.parkinglot.lotdesign.model.VehicleDTO;
 import com.example.parkinglot.lotdesign.repository.ParkingRepository;
 import com.example.parkinglot.lotdesign.service.ParkingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ServiceImpl implements ParkingService {
 
     @Autowired
