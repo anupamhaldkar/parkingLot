@@ -17,7 +17,7 @@ public class SwaggerConfig {
     public Docket parkingLotApi() {
         return new Docket(DocumentationType.SWAGGER_2).groupName("ParkingLot-api").apiInfo(apiInfo()).select()
                 .apis(RequestHandlerSelectors.basePackage(
-                        "com.springboot.parkinglot.controller"))
+                        "com.example.parkinglot.lotdesign.controller"))
                 .build();
 
     }
